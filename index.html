@@ -1,20 +1,182 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Title</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS v5.2.0-beta1 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-      sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <div class="container">
+        <!-- Header -->
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container-fluid">
+          <h1 class="display-4">App Trello</h1>
+          <p class="lead">Espacio de trabajo tipo Kanban</p>
+        </div>
+      </div>
+      <!-- Columnas -->
+      <div class="row">
+        <!-- Columna 1 -->
+        <div class="col">
+          <div class="panel panel-danger">
+            <div class="panel-heading">
+              <h3>Por hacer</h3>
+              <!-- boton para añadir -->
+              <button type="button" class="btn btn-primary d-flex justify-content-center" data-bs-toggle="modal"data-bs-target="#exampleModal">Añadir</button>
+              <!-- Modal 1 -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Añadir tarea </h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form">
+                            <label for="titulo">Titulo</label>
+                            <input type="text" id="titulo" class="form-control" placeholder="Titulo de la tarea">
+                            <br>
+                            <br>
+                            <label for="titulo">Titulo</label>
+                            <textarea type="text" id="titulo" class="form-control" placeholder="Descripcion de la tarea"></textarea>
+                            <br>
+                            <br>
+                            <label for="responsable">Responsable</label>
+                            <input type="text" id="responsable" class="form-control" placeholder="Responsable de la tarea">
+                            <br>
+                            <br>
+                            <label for="fecha">Fecha de entrega</label>
+                            <input type="date" id="fecha" class="form-control" placeholder="Fecha de la tarea">
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >Cancelar</button>
+                      <button type="button" class="btn btn-primary"> Añadir</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Columna 2 -->
+        <div class="col">
+          <div class="panel panel-danger">
+            <div class="panel-heading">
+              <h3>En proceso</h3>
+              <!-- boton para añadir -->
+              <button type="button" class="btn btn-primary d-flex justify-content-center" data-bs-toggle="modal"data-bs-target="#exampleModal">Añadir</button>
+              <!-- Modal 2 -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Añadir tarea </h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form">
+                            <label for="titulo">Titulo</label>
+                            <input type="text" id="titulo" class="form-control" placeholder="Titulo de la tarea">
+                            <br>
+                            <br>
+                            <label for="titulo">Titulo</label>
+                            <textarea type="text" id="titulo" class="form-control" placeholder="Descripcion de la tarea"></textarea>
+                            <br>
+                            <br>
+                            <label for="responsable">Responsable</label>
+                            <input type="text" id="responsable" class="form-control" placeholder="Responsable de la tarea">
+                            <br>
+                            <br>
+                            <label for="fecha">Fecha de entrega</label>
+                            <input type="date" id="fecha" class="form-control" placeholder="Fecha de la tarea">
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >Cancelar</button>
+                      <button type="button" class="btn btn-primary"> Añadir</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Columna 3 -->
+        <div class="col">
+          <div class="panel panel-danger">
+            <div class="panel-heading">
+              <h3>Finalizado</h3>
+              <!-- boton para añadir -->
+              <button type="button" class="btn btn-primary d-flex justify-content-center" data-bs-toggle="modal"data-bs-target="#exampleModal">Añadir</button>
+              <!-- Modal 3 -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Añadir tarea </h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form">
+                            <label for="titulo">Titulo</label>
+                            <input type="text" id="titulo" class="form-control" placeholder="Titulo de la tarea">
+                            <br>
+                            <br>
+                            <label for="titulo">Titulo</label>
+                            <textarea type="text" id="titulo" class="form-control" placeholder="Descripcion de la tarea"></textarea>
+                            <br>
+                            <br>
+                            <label for="responsable">Responsable</label>
+                            <input type="text" id="responsable" class="form-control" placeholder="Responsable de la tarea">
+                            <br>
+                            <br>
+                            <label for="fecha">Fecha de entrega</label>
+                            <input type="date" id="fecha" class="form-control" placeholder="Fecha de la tarea">
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >Cancelar</button>
+                      <button type="button" class="btn btn-primary"> Añadir</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
