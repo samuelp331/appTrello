@@ -2,8 +2,8 @@
     "task": [
         {
             "id": 1,
-            "title": "frontend",
-            "person": "Camila",
+            "title": "prueba 1",
+            "person": "samuel",
             "details": "lorem ipsun amei dolor lorem ipsun amei dolorlorem ipsun amei dolor",
             "state": "done",
             "deadline": 1587632247,
@@ -12,8 +12,8 @@
         {
             
             "id": 2,
-            "title": "Backend",
-            "person": "Jhon doe",
+            "title": "prueba 2",
+            "person": "samuel",
             "details": "lorem ipsun amei dolor lorem lorem ipsun amei dolorlorem ipsun amei dolorlorem ipsun amei dolor",
             "state": "to-do",
             "deadline": 7586664210,
@@ -22,8 +22,8 @@
         {
             
             "id": 3,
-            "title": "Ing Sistemas",
-            "person": "David",
+            "title": "prueba 3",
+            "person": "samuel",
             "details": "Sube cambios al servidor lorem ipsun amei dolorlorem ipsun amei dolor",
             "state": "in-progress",
             "deadline": 7586864210,

@@ -28,7 +28,7 @@ html,body{
 .columnas .tarea.seleccionado{
 
     transform: scale(1.02) rotate(-1deg);
-    box-shadow: 0 0 10px rgb(214, 14, 14);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
 
 
 }
